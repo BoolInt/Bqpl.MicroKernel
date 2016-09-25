@@ -10,5 +10,7 @@
   <files>
     <file src="bin\Release\Bqpl.MicroKernel.dll" target="lib\net461" />
     <file src="bin\Release\Bqpl.MicroKernel.pdb" target="lib\net461" />
+    <file src="bin\Release\CodeContracts\Bqpl.MicroKernel.Contracts.dll" target="lib\net461\CodeContracts" />
+    <file src="bin\Release\CodeContracts\Bqpl.MicroKernel.Contracts.pdb" target="lib\net461\CodeContracts" />
   </files>
 </package>

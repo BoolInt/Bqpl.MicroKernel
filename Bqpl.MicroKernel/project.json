@@ -6,8 +6,8 @@
     "win": {}
   },
   "dependencies": {
-    "Bqpl.Contracts": "1.3.0",
-    "Bqpl.Exceptions": "1.0.0",
+    "Bqpl.Contracts": "1.4.0-unstable0008",
+    "Bqpl.Exceptions": "1.1.0-unstable0013",
     "System.Runtime": "4.1.0",
     "Unity": "4.0.1"
   }
