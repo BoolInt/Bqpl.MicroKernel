@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="DomainTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bqpl.MicroKernel\Bqpl.MicroKernel.csproj">

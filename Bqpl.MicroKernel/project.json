@@ -8,6 +8,7 @@
   "dependencies": {
     "Bqpl.Contracts": "1.3.0",
     "Bqpl.Exceptions": "1.0.0",
+    "System.Runtime": "4.1.0",
     "Unity": "4.0.1"
   }
 }
