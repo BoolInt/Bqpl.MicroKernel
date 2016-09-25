@@ -19,10 +19,6 @@ REM Build Solution by MSBuild
 "%programfiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe" %project%.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=Normal /nr:false
 if not "%errorlevel%"=="0" goto failure
 
-REM Run Unittests by NUnit
-call %XUnit20Path%\xunit.console.exe %project%.Test\bin\%config%\%project%.Test.dll
-if not "%errorlevel%"=="0" goto failure
-
 REM Pack NuSpec-Packages by NuGet
 set version=
 if not "%PackageVersion%" == "" (
