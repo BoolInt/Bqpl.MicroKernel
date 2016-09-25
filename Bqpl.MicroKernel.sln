@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		pre-build.bat = pre-build.bat
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bqpl.MicroKernel.Test", "Bqpl.MicroKernel.Test\Bqpl.MicroKernel.Test.csproj", "{9A6D4B14-4DCE-4D3E-A7AA-962564E22261}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{74060B43-55C2-4068-97C7-503E9E51F265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74060B43-55C2-4068-97C7-503E9E51F265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74060B43-55C2-4068-97C7-503E9E51F265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6D4B14-4DCE-4D3E-A7AA-962564E22261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6D4B14-4DCE-4D3E-A7AA-962564E22261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6D4B14-4DCE-4D3E-A7AA-962564E22261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6D4B14-4DCE-4D3E-A7AA-962564E22261}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
