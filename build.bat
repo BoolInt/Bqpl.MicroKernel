@@ -20,7 +20,7 @@ REM Build Solution by MSBuild
 if not "%errorlevel%"=="0" goto failure
 
 REM Run Unittests by NUnit
-call %XUnit20Path%\xunit.console.exe /config:%config% /framework:net-4.6.1 %project%.Test\bin\%config%\%project%.Test.dll
+call %XUnit20Path%\xunit.console.exe %project%.Test\bin\%config%\%project%.Test.dll
 if not "%errorlevel%"=="0" goto failure
 
 REM Pack NuSpec-Packages by NuGet
