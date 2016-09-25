@@ -9,5 +9,6 @@
   </metadata>
   <files>
     <file src="bin\Release\Bqpl.MicroKernel.dll" target="lib\net461" />
+    <file src="bin\Release\Bqpl.MicroKernel.pdb" target="lib\net461" />
   </files>
 </package>
