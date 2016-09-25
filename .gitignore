@@ -9,3 +9,7 @@
 /Bqpl.MicroKernel.Test/obj/Debug
 /Bqpl.MicroKernel.Test/project.lock.json
 /Bqpl.MicroKernel/project.lock.json
+/Bqpl.MicroKernel/bin/Release
+/Bqpl.MicroKernel/obj/Release
+/Bqpl.MicroKernel.Test/bin/Release
+/Bqpl.MicroKernel.Test/obj/Release
