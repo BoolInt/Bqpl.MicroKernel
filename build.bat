@@ -12,8 +12,8 @@ call dotnet restore
 if not "%errorlevel%"=="0" goto failure
 
 REM Update AssemblyInfo by GitVersion
-call %GitVersion% /updateassemblyinfo true
-if not "%errorlevel%"=="0" goto failure
+REM call %GitVersion% /updateassemblyinfo true
+REM if not "%errorlevel%"=="0" goto failure
 
 REM Build Solution by MSBuild
 "%programfiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe" %project%.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=Normal /nr:false
