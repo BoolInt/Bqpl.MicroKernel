@@ -1,18 +1,22 @@
 ﻿using Microsoft.Practices.Unity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bqpl.MicroKernel
 {
   public class Domain
   {
+    private LoadedAssemblyWatcher loadedAssemblyWatcher;
     private UnityContainer unityContainer;
 
     private Domain()
     {
+    }
+
+    private LoadedAssemblyWatcher LoadedAssemblyWatcher
+    {
+      get
+      {
+        return Lazy.GetOrCreate(ref loadedAssemblyWatcher);
+      }
     }
 
     private UnityContainer UnityContainer
@@ -37,7 +41,14 @@ namespace Bqpl.MicroKernel
 
     private void Initialize()
     {
-      UnityContainer.RegisterInstance(UnityContainer);
+      UnityContainer.RegisterInstance<IUnityContainer>(UnityContainer);
+
+      UnityContainer.RegisterType<IResolveProvider, ResolveProvider>();
+      UnityContainer.RegisterType<IRegisterProvider, RegisterProvider>();
+
+      LoadedAssemblyWatcher.BeginMonitoring();
+
+      LoadedAssemblyWatcher.Register(Resolve<ServiceAttributeAssemblyLoadedObserver>());
     }
   }
 }
