@@ -5,3 +5,6 @@
 /.vs
 /Bqpl.MicroKernel/obj/Debug
 /Bqpl.MicroKernel/bin/Debug
+/Bqpl.MicroKernel.Test/bin/Debug
+/Bqpl.MicroKernel.Test/obj/Debug
+/Bqpl.MicroKernel.Test/project.lock.json
